@@ -11,3 +11,4 @@ def test_text_not_found():
     browser.open('https://google.com')
     browser.element('[name="q"]').should(be.blank).type('hvbherfbvrrygsvyrslffrgtpoliedrfgthyujikolp45677899').press_enter()
     browser.element('[id="botstuff"]').should(have.text('По запросу -hvbherfbvrrygsvyrslffrgtpoliedrfgthyujikolp45677899 ничего не найдено.'))
+
